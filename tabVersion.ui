@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>705</width>
+    <height>678</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <item row="0" column="0">
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>2</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -29,14 +29,14 @@
          <property name="toolTip">
           <string/>
          </property>
+         <property name="layoutType" stdset="0">
+          <enum>PyDMTemplateRepeater::Flow</enum>
+         </property>
          <property name="templateFilename" stdset="0">
           <string>readbackTemplate.ui</string>
          </property>
          <property name="dataSource" stdset="0">
           <string>cmList.json</string>
-         </property>
-         <property name="layoutType" stdset="0">
-          <string>Horizontal</string>
          </property>
         </widget>
        </item>
@@ -46,21 +46,62 @@
       <attribute name="title">
        <string>JT Valve</string>
       </attribute>
-      <layout class="QGridLayout" name="gridLayout_3">
-       <item row="0" column="0">
-        <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_4">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="toolTip">
           <string/>
          </property>
-         <property name="templateFilename" stdset="0">
-          <string>modeTemplate.ui</string>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
          </property>
-         <property name="dataSource" stdset="0">
-          <string>cmList.json</string>
+         <property name="macros" stdset="0">
+          <string>valve=JT</string>
          </property>
-         <property name="layoutType" stdset="0">
-          <string>Horizontal</string>
+         <property name="filename" stdset="0">
+          <string>valveSettingTemplate.ui</string>
          </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QScrollArea" name="scrollArea_2">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>663</width>
+            <height>475</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_4">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="layoutType" stdset="0">
+              <enum>PyDMTemplateRepeater::Flow</enum>
+             </property>
+             <property name="templateFilename" stdset="0">
+              <string>modeTemplate.ui</string>
+             </property>
+             <property name="dataSource" stdset="0">
+              <string>cmList.json</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
         </widget>
        </item>
       </layout>
@@ -69,21 +110,65 @@
       <attribute name="title">
        <string>CD Valve</string>
       </attribute>
-      <layout class="QGridLayout" name="gridLayout_4">
-       <item row="0" column="0">
-        <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_5">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="toolTip">
           <string/>
          </property>
-         <property name="templateFilename" stdset="0">
-          <string>modeTemplate.ui</string>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
          </property>
-         <property name="dataSource" stdset="0">
-          <string>cmList.json</string>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
          </property>
-         <property name="layoutType" stdset="0">
-          <string>Horizontal</string>
+         <property name="macros" stdset="0">
+          <string>valve=CD</string>
          </property>
+         <property name="filename" stdset="0">
+          <string>valveSettingTemplate.ui</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QScrollArea" name="scrollArea">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>663</width>
+            <height>475</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_5">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="layoutType" stdset="0">
+              <enum>PyDMTemplateRepeater::Flow</enum>
+             </property>
+             <property name="templateFilename" stdset="0">
+              <string>modeTemplate.ui</string>
+             </property>
+             <property name="dataSource" stdset="0">
+              <string>cmList.json</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
         </widget>
        </item>
       </layout>
@@ -93,6 +178,11 @@
   </layout>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
   <customwidget>
    <class>PyDMTemplateRepeater</class>
    <extends>QFrame</extends>
