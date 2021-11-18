@@ -6,15 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>480</width>
-    <height>640</height>
+    <width>425</width>
+    <height>442</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="1">
+   <item row="0" column="1" colspan="2">
     <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_2">
      <property name="toolTip">
       <string/>
@@ -23,11 +23,14 @@
       <string>readbackTemplate.ui</string>
      </property>
      <property name="dataSource" stdset="0">
-      <string>source.json</string>
+      <string>cmList.json</string>
+     </property>
+     <property name="layoutType" stdset="0">
+      <string>Horizontal</string>
      </property>
     </widget>
    </item>
-   <item row="1" column="1">
+   <item row="1" column="1" rowspan="2" colspan="2">
     <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_4">
      <property name="toolTip">
       <string/>
@@ -36,11 +39,30 @@
       <string>modeTemplate.ui</string>
      </property>
      <property name="dataSource" stdset="0">
-      <string>source.json</string>
+      <string>cmList.json</string>
+     </property>
+     <property name="layoutType" stdset="0">
+      <string>Horizontal</string>
      </property>
     </widget>
    </item>
-   <item row="0" column="0" rowspan="2">
+   <item row="3" column="1" colspan="2">
+    <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_5">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="templateFilename" stdset="0">
+      <string>modeTemplate.ui</string>
+     </property>
+     <property name="dataSource" stdset="0">
+      <string>cmList.json</string>
+     </property>
+     <property name="layoutType" stdset="0">
+      <string>Horizontal</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" rowspan="4">
     <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater">
      <property name="toolTip">
       <string/>
@@ -49,7 +71,7 @@
       <string>valveSettingTemplate.ui</string>
      </property>
      <property name="dataSource" stdset="0">
-      <string>source.json</string>
+      <string>valveSettings.json</string>
      </property>
     </widget>
    </item>
@@ -60,6 +82,7 @@
    <class>PyDMTemplateRepeater</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.template_repeater</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>

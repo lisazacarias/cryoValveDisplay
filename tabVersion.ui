@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Linac Status</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_2">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="templateFilename" stdset="0">
+          <string>readbackTemplate.ui</string>
+         </property>
+         <property name="dataSource" stdset="0">
+          <string>cmList.json</string>
+         </property>
+         <property name="layoutType" stdset="0">
+          <string>Horizontal</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>JT Valve</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_4">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="templateFilename" stdset="0">
+          <string>modeTemplate.ui</string>
+         </property>
+         <property name="dataSource" stdset="0">
+          <string>cmList.json</string>
+         </property>
+         <property name="layoutType" stdset="0">
+          <string>Horizontal</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>CD Valve</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_5">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="templateFilename" stdset="0">
+          <string>modeTemplate.ui</string>
+         </property>
+         <property name="dataSource" stdset="0">
+          <string>cmList.json</string>
+         </property>
+         <property name="layoutType" stdset="0">
+          <string>Horizontal</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMTemplateRepeater</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.template_repeater</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

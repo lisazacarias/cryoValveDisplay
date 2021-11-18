@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>157</width>
-    <height>196</height>
+    <width>110</width>
+    <height>208</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -17,49 +23,49 @@
    <item row="1" column="0">
     <widget class="QLabel" name="label">
      <property name="text">
-      <string>TextLabel</string>
+      <string>Level %</string>
      </property>
     </widget>
    </item>
    <item row="2" column="0">
     <widget class="QLabel" name="label_2">
      <property name="text">
-      <string>TextLabel</string>
+      <string>GHRP T [K]</string>
      </property>
     </widget>
    </item>
    <item row="3" column="0">
     <widget class="QLabel" name="label_3">
      <property name="text">
-      <string>TextLabel</string>
+      <string>Avg</string>
      </property>
     </widget>
    </item>
    <item row="4" column="0">
     <widget class="QLabel" name="label_4">
      <property name="text">
-      <string>TextLabel</string>
+      <string>Delta-Rad</string>
      </property>
     </widget>
    </item>
    <item row="5" column="0">
     <widget class="QLabel" name="label_5">
      <property name="text">
-      <string>TextLabel</string>
+      <string>Delta-Long</string>
      </property>
     </widget>
    </item>
    <item row="6" column="0">
     <widget class="QLabel" name="label_6">
      <property name="text">
-      <string>TextLabel</string>
+      <string>Rate</string>
      </property>
     </widget>
    </item>
    <item row="7" column="0">
     <widget class="QLabel" name="label_7">
      <property name="text">
-      <string>TextLabel</string>
+      <string>P [bar]</string>
      </property>
     </widget>
    </item>

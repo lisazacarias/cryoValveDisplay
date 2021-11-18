@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>190</width>
-    <height>242</height>
+    <width>181</width>
+    <height>266</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -17,7 +23,7 @@
    <item row="1" column="0">
     <widget class="QLabel" name="label">
      <property name="text">
-      <string>TextLabel</string>
+      <string>Mode</string>
      </property>
     </widget>
    </item>
@@ -31,14 +37,14 @@
    <item row="4" column="1">
     <widget class="QRadioButton" name="radioButton_2">
      <property name="text">
-      <string>RadioButton</string>
+      <string>Sequencer</string>
      </property>
     </widget>
    </item>
    <item row="5" column="1">
     <widget class="QRadioButton" name="radioButton_3">
      <property name="text">
-      <string>RadioButton</string>
+      <string>Auto</string>
      </property>
     </widget>
    </item>
@@ -73,35 +79,35 @@
    <item row="9" column="0">
     <widget class="QLabel" name="label_3">
      <property name="text">
-      <string>TextLabel</string>
+      <string>Output</string>
      </property>
     </widget>
    </item>
    <item row="10" column="0">
     <widget class="QLabel" name="label_4">
      <property name="text">
-      <string>TextLabel</string>
+      <string>Readback</string>
      </property>
     </widget>
    </item>
    <item row="7" column="0">
     <widget class="QLabel" name="label_5">
      <property name="text">
-      <string>TextLabel</string>
+      <string>SP</string>
      </property>
     </widget>
    </item>
    <item row="8" column="0">
     <widget class="QLabel" name="label_6">
      <property name="text">
-      <string>TextLabel</string>
+      <string>Manual</string>
      </property>
     </widget>
    </item>
    <item row="2" column="1">
     <widget class="QRadioButton" name="radioButton">
      <property name="text">
-      <string>RadioButton</string>
+      <string>Manual</string>
      </property>
     </widget>
    </item>
