@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>181</width>
-    <height>266</height>
+    <width>174</width>
+    <height>271</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -34,22 +34,14 @@
      </property>
     </widget>
    </item>
-   <item row="4" column="1">
-    <widget class="QRadioButton" name="radioButton_2">
-     <property name="text">
-      <string>Sequencer</string>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="1">
-    <widget class="QRadioButton" name="radioButton_3">
-     <property name="text">
-      <string>Auto</string>
-     </property>
-    </widget>
-   </item>
    <item row="7" column="1">
     <widget class="PyDMLineEdit" name="PyDMLineEdit">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -57,6 +49,12 @@
    </item>
    <item row="8" column="1">
     <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -104,13 +102,6 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="1">
-    <widget class="QRadioButton" name="radioButton">
-     <property name="text">
-      <string>Manual</string>
-     </property>
-    </widget>
-   </item>
    <item row="0" column="0" colspan="2">
     <widget class="QLabel" name="label_2">
      <property name="text">
@@ -118,6 +109,120 @@
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="PyDMPushButton" name="PyDMPushButton">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Manual</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string>${channel}</string>
+     </property>
+     <property name="pressValue" stdset="0">
+      <string>1</string>
+     </property>
+     <property name="releaseValue" stdset="0">
+      <string>0</string>
+     </property>
+     <property name="writeWhenRelease" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="PyDMPushButton" name="PyDMPushButton_2">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Sequencer</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string>${channel}</string>
+     </property>
+     <property name="pressValue" stdset="0">
+      <string>1</string>
+     </property>
+     <property name="releaseValue" stdset="0">
+      <string>0</string>
+     </property>
+     <property name="writeWhenRelease" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="PyDMPushButton" name="PyDMPushButton_3">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Auto</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string>${channel}</string>
+     </property>
+     <property name="pressValue" stdset="0">
+      <string>1</string>
+     </property>
+     <property name="releaseValue" stdset="0">
+      <string>0</string>
+     </property>
+     <property name="writeWhenRelease" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>${channel}</string>
+     </property>
+     <property name="circles" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="labels" stdset="0">
+      <stringlist/>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>${channel}</string>
+     </property>
+     <property name="circles" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="labels" stdset="0">
+      <stringlist/>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>${channel}</string>
+     </property>
+     <property name="circles" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="labels" stdset="0">
+      <stringlist/>
      </property>
     </widget>
    </item>
@@ -133,6 +238,16 @@
    <class>PyDMLineEdit</class>
    <extends>QLineEdit</extends>
    <header>pydm.widgets.line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
   </customwidget>
  </customwidgets>
  <resources/>
