@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>174</width>
-    <height>282</height>
+    <width>190</width>
+    <height>258</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -20,189 +20,19 @@
    <string>Form</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="10" column="0">
-    <widget class="QLabel" name="label_4">
-     <property name="text">
-      <string>Readback</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="0">
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>Mode</string>
-     </property>
-    </widget>
-   </item>
    <item row="1" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel">
-     <property name="toolTip">
-      <string/>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="0">
-    <widget class="PyDMPushButton" name="PyDMPushButton">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>Manual</string>
-     </property>
-     <property name="channel" stdset="0">
-      <string>${channel}</string>
-     </property>
-     <property name="pressValue" stdset="0">
-      <string>1</string>
-     </property>
-     <property name="releaseValue" stdset="0">
-      <string>0</string>
-     </property>
-     <property name="writeWhenRelease" stdset="0">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="7" column="0">
-    <widget class="QLabel" name="label_5">
-     <property name="text">
-      <string>SP</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="0">
-    <widget class="PyDMPushButton" name="PyDMPushButton_2">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>Sequencer</string>
-     </property>
-     <property name="channel" stdset="0">
-      <string>${channel}</string>
-     </property>
-     <property name="pressValue" stdset="0">
-      <string>1</string>
-     </property>
-     <property name="releaseValue" stdset="0">
-      <string>0</string>
-     </property>
-     <property name="writeWhenRelease" stdset="0">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="0">
-    <widget class="PyDMPushButton" name="PyDMPushButton_3">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>Auto</string>
-     </property>
-     <property name="channel" stdset="0">
-      <string>${channel}</string>
-     </property>
-     <property name="pressValue" stdset="0">
-      <string>1</string>
-     </property>
-     <property name="releaseValue" stdset="0">
-      <string>0</string>
-     </property>
-     <property name="writeWhenRelease" stdset="0">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="10" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_3">
-     <property name="toolTip">
-      <string/>
-     </property>
-    </widget>
-   </item>
-   <item row="7" column="1">
-    <widget class="PyDMLineEdit" name="PyDMLineEdit">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-    </widget>
-   </item>
-   <item row="8" column="0">
-    <widget class="QLabel" name="label_6">
-     <property name="text">
-      <string>Manual</string>
-     </property>
-    </widget>
-   </item>
-   <item row="8" column="1">
-    <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-    </widget>
-   </item>
-   <item row="9" column="0">
-    <widget class="QLabel" name="label_3">
-     <property name="text">
-      <string>Output</string>
-     </property>
-    </widget>
-   </item>
-   <item row="9" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_2">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="channel" stdset="0">
-      <string>C${TYPE}:${CM}:${ACT}:MODE</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="1">
-    <widget class="PyDMDrawingCircle" name="PyDMDrawingCircle_5">
+    <widget class="PyDMDrawingCircle" name="manualCircle" native="true">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
      </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="rules" stdset="0">
-      <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;C${TYPE}:${CM}:${ACT}:MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] == 2 and (ch[0] != 1 and ch[0]!=0)&quot;, &quot;name&quot;: &quot;make visible&quot;, &quot;initial_value&quot;: &quot;True&quot;}]</string>
-     </property>
-     <property name="brush" stdset="0">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>0</red>
-        <green>255</green>
-        <blue>0</blue>
-       </color>
-      </brush>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="1">
-    <widget class="PyDMDrawingCircle" name="PyDMDrawingCircle_3">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
      </property>
      <property name="toolTip">
       <string/>
@@ -221,13 +51,151 @@
      </property>
     </widget>
    </item>
+   <item row="6" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel_2">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>C${TYPE}:${CM}:${ACT}:OUTPUT</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Readback</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>Manual</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="PyDMPushButton" name="PyDMPushButton">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Manual</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string>C${TYPE}:${CM}:${ACT}:MANUAL</string>
+     </property>
+     <property name="pressValue" stdset="0">
+      <string>1</string>
+     </property>
+     <property name="releaseValue" stdset="0">
+      <string>0</string>
+     </property>
+     <property name="writeWhenRelease" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="relativeChange" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
    <item row="5" column="1">
-    <widget class="PyDMDrawingCircle" name="PyDMDrawingCircle_4">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>C${TYPE}:${CM}:${ACT}:MANUAL1</string>
+     </property>
+     <property name="precision" stdset="0">
+      <number>2</number>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Output</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="PyDMDrawingCircle" name="sequencerCircle" native="true">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="rules" stdset="0">
+      <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;C${TYPE}:${CM}:${ACT}:MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] == 2 and (ch[0] != 1 and ch[0]!=0)&quot;, &quot;name&quot;: &quot;make visible&quot;, &quot;initial_value&quot;: &quot;True&quot;}]</string>
+     </property>
+     <property name="brush" stdset="0">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>SP</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="PyDMPushButton" name="PyDMPushButton_2">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Sequencer</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string>C${TYPE}:${CM}:${ACT}:SEQUENCER</string>
+     </property>
+     <property name="pressValue" stdset="0">
+      <string>1</string>
+     </property>
+     <property name="releaseValue" stdset="0">
+      <string>0</string>
+     </property>
+     <property name="writeWhenRelease" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="relativeChange" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="PyDMDrawingCircle" name="autoCircle" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
      </property>
      <property name="toolTip">
       <string/>
@@ -246,23 +214,68 @@
      </property>
     </widget>
    </item>
+   <item row="3" column="0">
+    <widget class="PyDMPushButton" name="PyDMPushButton_3">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Auto</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string>C${TYPE}:${CM}:${ACT}:AUTO</string>
+     </property>
+     <property name="pressValue" stdset="0">
+      <string>1</string>
+     </property>
+     <property name="releaseValue" stdset="0">
+      <string>0</string>
+     </property>
+     <property name="writeWhenRelease" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="relativeChange" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>C${TYPE}:${CM}:${ACT}:SP_RQST</string>
+     </property>
+     <property name="precision" stdset="0">
+      <number>2</number>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel_3">
+     <property name="toolTip">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>${CM}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
   </layout>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>9</x>
-     <y>9</y>
-     <width>45</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>${CM}</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
  </widget>
  <customwidgets>
   <customwidget>
@@ -276,14 +289,14 @@
    <header>pydm.widgets.line_edit</header>
   </customwidget>
   <customwidget>
-   <class>PyDMDrawingCircle</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMPushButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.pushbutton</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMDrawingCircle</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
   </customwidget>
  </customwidgets>
  <resources/>
