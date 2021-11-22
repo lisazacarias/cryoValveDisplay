@@ -19,7 +19,14 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QFormLayout" name="formLayout">
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="10" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Readback</string>
+     </property>
+    </widget>
+   </item>
    <item row="1" column="0">
     <widget class="QLabel" name="label">
      <property name="text">
@@ -56,26 +63,14 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="1">
-    <widget class="PyDMDrawingCircle" name="PyDMDrawingCircle_3" native="true">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="rules" stdset="0">
-      <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;C${TYPE}:${CM}:${ACT}:MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] == 0&quot;, &quot;name&quot;: &quot;make visible&quot;, &quot;initial_value&quot;: &quot;False&quot;}]</string>
-     </property>
-     <property name="brush" stdset="0">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>0</red>
-        <green>255</green>
-        <blue>0</blue>
-       </color>
-      </brush>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>SP</string>
      </property>
     </widget>
    </item>
-   <item row="3" column="0">
+   <item row="4" column="0">
     <widget class="PyDMPushButton" name="PyDMPushButton_2">
      <property name="toolTip">
       <string/>
@@ -97,26 +92,7 @@
      </property>
     </widget>
    </item>
-   <item row="3" column="1">
-    <widget class="PyDMDrawingCircle" name="PyDMDrawingCircle_4" native="true">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="rules" stdset="0">
-      <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;C${TYPE}:${CM}:${ACT}:MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] == 1&quot;, &quot;name&quot;: &quot;make visible&quot;, &quot;initial_value&quot;: &quot;False&quot;}]</string>
-     </property>
-     <property name="brush" stdset="0">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>0</red>
-        <green>255</green>
-        <blue>0</blue>
-       </color>
-      </brush>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="0">
+   <item row="5" column="0">
     <widget class="PyDMPushButton" name="PyDMPushButton_3">
      <property name="toolTip">
       <string/>
@@ -138,33 +114,14 @@
      </property>
     </widget>
    </item>
-   <item row="4" column="1">
-    <widget class="PyDMDrawingCircle" name="PyDMDrawingCircle_5" native="true">
+   <item row="10" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel_3">
      <property name="toolTip">
       <string/>
      </property>
-     <property name="rules" stdset="0">
-      <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;C${TYPE}:${CM}:${ACT}:MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] == 2&quot;, &quot;name&quot;: &quot;make visible&quot;, &quot;initial_value&quot;: &quot;False&quot;}]</string>
-     </property>
-     <property name="brush" stdset="0">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>0</red>
-        <green>255</green>
-        <blue>0</blue>
-       </color>
-      </brush>
-     </property>
     </widget>
    </item>
-   <item row="5" column="0">
-    <widget class="QLabel" name="label_5">
-     <property name="text">
-      <string>SP</string>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="1">
+   <item row="7" column="1">
     <widget class="PyDMLineEdit" name="PyDMLineEdit">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -177,14 +134,14 @@
      </property>
     </widget>
    </item>
-   <item row="6" column="0">
+   <item row="8" column="0">
     <widget class="QLabel" name="label_6">
      <property name="text">
       <string>Manual</string>
      </property>
     </widget>
    </item>
-   <item row="6" column="1">
+   <item row="8" column="1">
     <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -197,14 +154,14 @@
      </property>
     </widget>
    </item>
-   <item row="7" column="0">
+   <item row="9" column="0">
     <widget class="QLabel" name="label_3">
      <property name="text">
       <string>Output</string>
      </property>
     </widget>
    </item>
-   <item row="7" column="1">
+   <item row="9" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_2">
      <property name="toolTip">
       <string/>
@@ -214,31 +171,98 @@
      </property>
     </widget>
    </item>
-   <item row="8" column="0">
-    <widget class="QLabel" name="label_4">
-     <property name="text">
-      <string>Readback</string>
+   <item row="4" column="1">
+    <widget class="PyDMDrawingCircle" name="PyDMDrawingCircle_5">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
      </property>
-    </widget>
-   </item>
-   <item row="8" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_3">
      <property name="toolTip">
       <string/>
      </property>
+     <property name="rules" stdset="0">
+      <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;C${TYPE}:${CM}:${ACT}:MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] == 2 and (ch[0] != 1 and ch[0]!=0)&quot;, &quot;name&quot;: &quot;make visible&quot;, &quot;initial_value&quot;: &quot;True&quot;}]</string>
+     </property>
+     <property name="brush" stdset="0">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
     </widget>
    </item>
-   <item row="0" column="0" colspan="2">
-    <widget class="QLabel" name="label_2">
-     <property name="text">
-      <string>${CM}</string>
+   <item row="2" column="1">
+    <widget class="PyDMDrawingCircle" name="PyDMDrawingCircle_3">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
      </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="rules" stdset="0">
+      <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;C${TYPE}:${CM}:${ACT}:MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] == 0 and (ch[0] != 1 and ch[0]!=2)&quot;, &quot;name&quot;: &quot;make visible&quot;, &quot;initial_value&quot;: &quot;True&quot;}]</string>
+     </property>
+     <property name="brush" stdset="0">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="PyDMDrawingCircle" name="PyDMDrawingCircle_4">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="rules" stdset="0">
+      <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;C${TYPE}:${CM}:${ACT}:MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] == 1 and (ch[0] != 2 and ch[0]!=0)&quot;, &quot;name&quot;: &quot;make visible&quot;, &quot;initial_value&quot;: &quot;True&quot;}]</string>
+     </property>
+     <property name="brush" stdset="0">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </brush>
      </property>
     </widget>
    </item>
   </layout>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>45</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>${CM}</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>
@@ -252,14 +276,14 @@
    <header>pydm.widgets.line_edit</header>
   </customwidget>
   <customwidget>
-   <class>PyDMPushButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.pushbutton</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMDrawingCircle</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
   </customwidget>
  </customwidgets>
  <resources/>
