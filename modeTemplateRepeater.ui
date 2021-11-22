@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>426</width>
-    <height>280</height>
+    <width>587</width>
+    <height>362</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,8 +24,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>400</width>
-        <height>254</height>
+        <width>553</width>
+        <height>4800</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
@@ -33,6 +33,9 @@
         <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_4">
          <property name="toolTip">
           <string/>
+         </property>
+         <property name="layoutType" stdset="0">
+          <enum>PyDMTemplateRepeater::Flow</enum>
          </property>
          <property name="countShownInDesigner" stdset="0">
           <number>35</number>
@@ -45,9 +48,6 @@
          </property>
          <property name="macros" stdset="0">
           <string/>
-         </property>
-         <property name="layoutType" stdset="0">
-          <string>Flow</string>
          </property>
         </widget>
        </item>

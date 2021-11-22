@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>590</width>
-    <height>579</height>
+    <width>726</width>
+    <height>594</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <item row="0" column="0">
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -37,8 +37,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>520</width>
-            <height>500</height>
+            <width>686</width>
+            <height>527</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_5">
@@ -46,6 +46,12 @@
             <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_2">
              <property name="toolTip">
               <string/>
+             </property>
+             <property name="layoutType" stdset="0">
+              <enum>PyDMTemplateRepeater::Flow</enum>
+             </property>
+             <property name="countShownInDesigner" stdset="0">
+              <number>35</number>
              </property>
              <property name="templateFilename" stdset="0">
               <string>readbackTemplate.ui</string>
@@ -67,22 +73,6 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
-         <property name="toolTip">
-          <string/>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::NoFrame</enum>
-         </property>
-         <property name="macros" stdset="0">
-          <string>TYPE=LIC,ACT=3001:PVJT</string>
-         </property>
-         <property name="filename" stdset="0">
-          <string>modeTemplateRepeater.ui</string>
-         </property>
-        </widget>
-       </item>
-       <item>
         <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
@@ -101,6 +91,22 @@
          </property>
          <property name="filename" stdset="0">
           <string>valveSettingTemplate.ui</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="macros" stdset="0">
+          <string>TYPE=LIC,ACT=3001:PVJT</string>
+         </property>
+         <property name="filename" stdset="0">
+          <string>modeTemplateRepeater.ui</string>
          </property>
         </widget>
        </item>
@@ -137,35 +143,19 @@
         </widget>
        </item>
        <item>
-        <widget class="QScrollArea" name="scrollArea">
-         <property name="widgetResizable">
-          <bool>true</bool>
+        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+         <property name="toolTip">
+          <string/>
          </property>
-         <widget class="QWidget" name="scrollAreaWidgetContents">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>518</width>
-            <height>478</height>
-           </rect>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_3">
-           <item row="0" column="0">
-            <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_5">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="templateFilename" stdset="0">
-              <string>modeTemplate.ui</string>
-             </property>
-             <property name="dataSource" stdset="0">
-              <string>cmList.json</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="macros" stdset="0">
+          <string>TYPE=LIC,ACT=3002:PVCD</string>
+         </property>
+         <property name="filename" stdset="0">
+          <string>modeTemplateRepeater.ui</string>
+         </property>
         </widget>
        </item>
       </layout>
