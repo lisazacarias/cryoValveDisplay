@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>705</width>
-    <height>678</height>
+    <width>590</width>
+    <height>579</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -37,8 +37,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>665</width>
-            <height>611</height>
+            <width>520</width>
+            <height>500</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_5">
@@ -46,9 +46,6 @@
             <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_2">
              <property name="toolTip">
               <string/>
-             </property>
-             <property name="layoutType" stdset="0">
-              <enum>PyDMTemplateRepeater::Flow</enum>
              </property>
              <property name="templateFilename" stdset="0">
               <string>readbackTemplate.ui</string>
@@ -70,6 +67,22 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
+        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="macros" stdset="0">
+          <string>TYPE=LIC,ACT=3001:PVJT</string>
+         </property>
+         <property name="filename" stdset="0">
+          <string>modeTemplateRepeater.ui</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
@@ -89,44 +102,6 @@
          <property name="filename" stdset="0">
           <string>valveSettingTemplate.ui</string>
          </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QScrollArea" name="scrollArea_2">
-         <property name="widgetResizable">
-          <bool>true</bool>
-         </property>
-         <widget class="QWidget" name="scrollAreaWidgetContents_2">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>663</width>
-            <height>475</height>
-           </rect>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_4">
-           <item row="0" column="0">
-            <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_4">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="layoutType" stdset="0">
-              <enum>PyDMTemplateRepeater::Flow</enum>
-             </property>
-             <property name="countShownInDesigner" stdset="0">
-              <number>35</number>
-             </property>
-             <property name="templateFilename" stdset="0">
-              <string>modeTemplate.ui</string>
-             </property>
-             <property name="dataSource" stdset="0">
-              <string>cmList.json</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
         </widget>
        </item>
       </layout>
@@ -171,8 +146,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>208</width>
-            <height>295</height>
+            <width>518</width>
+            <height>478</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_3">
@@ -180,9 +155,6 @@
             <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_5">
              <property name="toolTip">
               <string/>
-             </property>
-             <property name="layoutType" stdset="0">
-              <enum>PyDMTemplateRepeater::Flow</enum>
              </property>
              <property name="templateFilename" stdset="0">
               <string>modeTemplate.ui</string>
@@ -207,6 +179,7 @@
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.embedded_display</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>PyDMTemplateRepeater</class>

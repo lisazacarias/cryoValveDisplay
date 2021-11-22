@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>174</width>
-    <height>271</height>
+    <height>282</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -57,12 +57,12 @@
     </widget>
    </item>
    <item row="2" column="1">
-    <widget class="PyDMDrawingCircle" name="PyDMDrawingCircle_3">
+    <widget class="PyDMDrawingCircle" name="PyDMDrawingCircle_3" native="true">
      <property name="toolTip">
       <string/>
      </property>
      <property name="rules" stdset="0">
-      <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;C$(TYPE):$(CM):$(ACT):MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] == 0&quot;, &quot;name&quot;: &quot;make visible&quot;, &quot;initial_value&quot;: &quot;False&quot;}]</string>
+      <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;C${TYPE}:${CM}:${ACT}:MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] == 0&quot;, &quot;name&quot;: &quot;make visible&quot;, &quot;initial_value&quot;: &quot;False&quot;}]</string>
      </property>
      <property name="brush" stdset="0">
       <brush brushstyle="SolidPattern">
@@ -98,12 +98,12 @@
     </widget>
    </item>
    <item row="3" column="1">
-    <widget class="PyDMDrawingCircle" name="PyDMDrawingCircle_4">
+    <widget class="PyDMDrawingCircle" name="PyDMDrawingCircle_4" native="true">
      <property name="toolTip">
       <string/>
      </property>
      <property name="rules" stdset="0">
-      <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;C$(TYPE):$(CM):$(ACT):MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] == 1&quot;, &quot;name&quot;: &quot;make visible&quot;, &quot;initial_value&quot;: &quot;False&quot;}]</string>
+      <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;C${TYPE}:${CM}:${ACT}:MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] == 1&quot;, &quot;name&quot;: &quot;make visible&quot;, &quot;initial_value&quot;: &quot;False&quot;}]</string>
      </property>
      <property name="brush" stdset="0">
       <brush brushstyle="SolidPattern">
@@ -139,12 +139,12 @@
     </widget>
    </item>
    <item row="4" column="1">
-    <widget class="PyDMDrawingCircle" name="PyDMDrawingCircle_5">
+    <widget class="PyDMDrawingCircle" name="PyDMDrawingCircle_5" native="true">
      <property name="toolTip">
       <string/>
      </property>
      <property name="rules" stdset="0">
-      <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;C$(TYPE):$(CM):$(ACT):MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] == 2&quot;, &quot;name&quot;: &quot;make visible&quot;, &quot;initial_value&quot;: &quot;False&quot;}]</string>
+      <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;C${TYPE}:${CM}:${ACT}:MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] == 2&quot;, &quot;name&quot;: &quot;make visible&quot;, &quot;initial_value&quot;: &quot;False&quot;}]</string>
      </property>
      <property name="brush" stdset="0">
       <brush brushstyle="SolidPattern">
@@ -209,6 +209,9 @@
      <property name="toolTip">
       <string/>
      </property>
+     <property name="channel" stdset="0">
+      <string>C${TYPE}:${CM}:${ACT}:MODE</string>
+     </property>
     </widget>
    </item>
    <item row="8" column="0">
@@ -249,14 +252,14 @@
    <header>pydm.widgets.line_edit</header>
   </customwidget>
   <customwidget>
-   <class>PyDMDrawingCircle</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMPushButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.pushbutton</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMDrawingCircle</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
   </customwidget>
  </customwidgets>
  <resources/>
